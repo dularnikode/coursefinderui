@@ -1,0 +1,96 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 0;
+  padding-top: 76px;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .main-content-wrapper.sidebar-open {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+  
+  .main-content-wrapper.sidebar-closed {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1099;
+}
+
+.content-area {
+  display: flex;
+  flex: 1;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .content-area {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .greeting-container {
+    padding-left: 1.5rem !important;
+  }
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.right-sidebar {
+  width: 320px;
+  min-width: 320px;
+}
+
+@media (max-width: 991.98px) {
+  .right-sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Dotted border for sidebar separator */
+.border-top-dashed {
+  border-top-style: dashed !important;
+  border-top-width: 1px !important;
+}
+
