@@ -1,6 +1,28 @@
-# React + Vite
+# Course Finder UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+### Starting the Local Server
+
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (or the port specified by Vite).
 
 Currently, two official plugins are available:
 
