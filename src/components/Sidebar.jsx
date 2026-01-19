@@ -28,7 +28,7 @@ function Sidebar({ isOpen, onToggle }) {
     { icon: 'bi-file-text', label: 'Applications' },
     { icon: 'bi-search', label: 'Search Courses' },
     { icon: 'bi-wallet2', label: 'Wallet' },
-    { icon: 'bi-handshake', label: 'Commission Payments' },
+    { icon: 'bi-paypal', label: 'Commission Payments' },
   ];
 
   const sidebarWidth = '220px';
